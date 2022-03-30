@@ -970,7 +970,7 @@ body.popup-show::after {
   border-radius: 5px;
   position: absolute;
   top: 90px;
-  right: 0;
+  right: 10px;
   z-index: 5;
   width: 20rem;
   opacity: 0;
@@ -1247,7 +1247,7 @@ body.popup-show::after {
     position: relative;
     padding-right: 1.5rem;
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .spollers__title::before {
     display: block;
@@ -1260,6 +1260,7 @@ body.popup-show::after {
     color: #FFFFFF;
     font-size: 0.875rem;
     transform: rotate(90deg);
+    flex: 1 1 auto;
   }
 }
 .spollers__link {
