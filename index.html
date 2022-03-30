@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TwentyTwo</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220330210951">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<a href="index.html" class="header__logo">TwentyTwo</a>
+
+
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Catalog</a></li>
+								<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="header__shop">
+						<a href="" class="header__icon-shop  _icon-shopping"></a>
+						<div class="header__card">
+							<div class="header__top card">
+								<div class="card__number"></div>
+								<div class="card__title">Your Cart</div>
+								<button class="card__btn" type="button">x</button>
+							</div>
+							<ul class="header__list list-card"></ul>
+
+							<div class="header__total">Subtotal: <span>$21.60</span></div>
+							<button data-popup="#popup" type="button" class="header__button button">Checkout</button>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__top">
+						<div class="main__body">
+							<h1 class="main__title">Quis quisque mi rhoncus quis</h1>
+							<a href="" class="main__button button">Show catalog</a>
+						</div>
+						<div class="main__image-ibg"><picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.jpg" alt="img"></picture></div>
+					</div>
+					<div class="main__bottom info-main">
+						<div class="info-main__image-ibg"><picture><source srcset="img/bottom-bg.webp" type="image/webp"><img src="img/bottom-bg.jpg" alt="img"></picture></div>
+						<p class="info-main__text">Blandit ultricies amet amet integer nunc volutpat. Blandit sit varius congue lorem habitant adipiscing. Cursus duis arcu, fermentum rhoncus aliquet lectus amet. </p>
+					</div>
+				</div>
+			</section>
+			<section class="page__catalog catalog">
+				<div class="catalog__container">
+					<h2 class="catalog__title title">Catalog</h2>
+					<div class="catalog__items catalog__items_margin">
+
+						<article data-pid="1" class="catalog__item item-catalog ">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$38</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="2" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$28</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="3" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$48</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="4" class="catalog__item item-catalog">
+							<div class="item-catalog__label">
+								<img src="img/catalog/sale.svg" alt="">
+							</div>
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$18</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+					</div>
+					<!-- <button type="button" class="catalog__buttom button button_black">Show more</button> -->
+					<div data-showmore class="block">
+						<div data-showmore-content class="catalog__items">
+							<article data-pid="5" class="catalog__item item-catalog">
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$48</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+							<article data-pid="6" class="catalog__item item-catalog">
+								<div class="item-catalog__label">
+									<img src="img/catalog/sale.svg" alt="sale">
+								</div>
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$18</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+							<article data-pid="7" class="catalog__item item-catalog">
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$28</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+							<article data-pid="8" class="catalog__item item-catalog">
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$38</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+						</div>
+						<button data-showmore-button type="button" class="block__more button"><span>Show more</span><span>Show less</span></button>
+					</div>
+				</div>
+			</section>
+			<section class="page__about-us about-us">
+				<div class="about-us__container">
+					<div class="about-us__title title">About us</div>
+					<div class="about-us__wrapper">
+						<div class="about-us__content content-about">
+							<div class="content-about__body">
+								<h3 class="content-about__title">Cras nascetur cum nec</h3>
+								<div class="content-about__text">
+									<p>Morbi quisque facilisis pretium, ullamcorper. Eget id quisque ridiculus ipsum duis venenatis arcu tristique vestibulum. Integer in praesent pretium aliquam. Lacinia facilisi adipiscing donec orci ut aliquam, elementum cursus. Ut senectus nec sit elementum nulla faucibus adipiscing. </p>
+									<p>Amet ullamcorper elementum neque sodales a. Lectus dolor praesent faucibus blandit. Sit mauris ac at semper tempor quisque adipiscing orci. Urna sagittis nunc lorem amet. Magnis fames faucibus viverra pulvinar lectus vitae lacus ut. Imperdiet quis auctor ullamcorper iaculis risus neque, cursus pulvinar.</p>
+								</div>
+							</div>
+							<div class="content-about__info">
+								<h4 class="content-about__subtitle">Vitae id nullam</h4>
+								<div class="content-about__text">Non velit, convallis aliquet vehicula facilisis suspendisse. Urna fusce elit, massa sit cursus sit enim, in in. </div>
+							</div>
+						</div>
+						<div class="about-us__image-ibg"><picture><source srcset="img/about-us.webp" type="image/webp"><img src="img/about-us.jpg" alt="img"></picture></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Reviews</h2>
+					<div class="reviews__wrapper">
+
+						<div class="reviews__slider">
+							<div class="reviews__swiper">
+
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__wrapper">
+										<div class="slide-reviews__image-ibg"><picture><source srcset="img/swiper/01.webp" type="image/webp"><img src="img/swiper/01.jpg" alt=""></picture></div>
+										<div class="slide-reviews__body">
+											<h3 class="slide-reviews__title">Talia Kerin</h3>
+											<p class="slide-reviews__text">Sagittis sed habitasse orci orci. Tellus, nulla magna blandit ornare non, nullam vel. Consectetur quam varius arcu, eget dolor quis. Aliquam lectus lacus maecenas leo, eget tincidunt ut venenatis. Rutrum nibh ac libero, viverra consectetur nunc. Vitae parturient ut facilisi eros, sagittis magna nec.</p>
+											<div class="slide-reviews__icon icon-slide-review">
+												<div class="icon-slide-review icon-slide-review_vk _icon-vk"></div>
+												<div class="icon-slide-review icon-slide-review_facebook _icon-facebook"></div>
+												<div class="icon-slide-review icon-slide-review_instagram _icon-instagram"></div>
+												<div class="icon-slide-review icon-slide-review_telegram _icon-telegram"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__wrapper">
+										<div class="slide-reviews__image-ibg"><picture><source srcset="img/swiper/02.webp" type="image/webp"><img src="img/swiper/02.jpg" alt=""></picture></div>
+										<div class="slide-reviews__body">
+											<h3 class="slide-reviews__title">Grant Jenny</h3>
+											<p class="slide-reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui auctor dictum eget a elit. Pellentesque varius diam risus, ut condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar cursus nec quis tellus.</p>
+											<div class="slide-reviews__icon icon-slide-review">
+												<div class="icon-slide-review icon-slide-review_vk _icon-vk"></div>
+												<div class="icon-slide-review icon-slide-review_facebook _icon-facebook"></div>
+												<div class="icon-slide-review icon-slide-review_instagram _icon-instagram"></div>
+												<div class="icon-slide-review icon-slide-review_telegram _icon-telegram"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews">
+									<div class="slide-reviews__wrapper">
+										<div class="slide-reviews__image-ibg"><picture><source srcset="img/swiper/03.webp" type="image/webp"><img src="img/swiper/03.jpg" alt=""></picture></div>
+										<div class="slide-reviews__body">
+											<h3 class="slide-reviews__title">Angelina Jolie</h3>
+											<p class="slide-reviews__text">Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante.</p>
+											<div class="slide-reviews__icon icon-slide-review">
+												<div class="icon-slide-review icon-slide-review_vk _icon-vk"></div>
+												<div class="icon-slide-review icon-slide-review_facebook _icon-facebook"></div>
+												<div class="icon-slide-review icon-slide-review_instagram _icon-instagram"></div>
+												<div class="icon-slide-review icon-slide-review_telegram _icon-telegram"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="reviews__arrows arrow-reviews">
+								<button type="button" class="arrow-review arrow-review_prew _icon-arrow-prew"></button>
+								<button type="button" class="arrow-review arrow-review_next _icon-arrow-next"></button>
+							</div>
+
+						</div>
+
+						<div class="reviews__dotts"></div>
+
+					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__title title">Contacts</div>
+					<div class="contacts__wrapper">
+						<div class="contacts__body">
+							<ul class="contacts__items">
+								<li class="contacts__item">
+									<a class="contacts__link" href="https://www.google.com.ua">Address: <span>Ukraine, Kuiv. address 24</span></a>
+								</li>
+								<li class="contacts__item">
+									<a class="contacts__link" href="tel:380988888888">Phone: <span>+380 (98) 888-88-88</span></a>
+								</li>
+								<li class="contacts__item">
+									<a class="contacts__link" href="tel:380988888888">Fax: <span>+380 (98) 888-88-88</span></a>
+								</li>
+							</ul>
+
+							<div class="contacts__info info-contact">
+								<div class="info-contact__title">Requisites:</div>
+								<div class="info-contact__text">ОКПО 00032547</div>
+								<div class="info-contact__text">ОКАТО 45293554001</div>
+								<div class="info-contact__text">ОКТМО 45397000001</div>
+							</div>
+						</div>
+
+						<form class="contacts__form form" action="#">
+							<div class="form__input">
+								<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+							</div>
+							<div class="form__input">
+								<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+							</div>
+							<div class="form__input">
+								<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+							</div>
+							<div class="form__textarea">
+								<textarea class="textarea" autocomplete="off" placeholder="Message" name="text"></textarea>
+							</div>
+							<button type="submit" class="form__btn button">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__maps maps">
+				<div id="map" class="maps__body">
+				</div>
+				<script>
+					function initMap() {
+
+						const styledMapType = new google.maps.StyledMapType(
+							[{
+									elementType: "geometry",
+									stylers: [{
+										color: "#ebe3cd"
+									}]
+								},
+								{
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#484747"
+									}]
+								},
+								{
+									elementType: "labels.text.stroke",
+									stylers: [{
+										visibility: "off"
+									}]
+								},
+								{
+									featureType: "administrative",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#c9b2a6"
+									}],
+								},
+								{
+									featureType: "administrative.land_parcel",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#dcd2be"
+									}],
+								},
+								{
+									featureType: "administrative.land_parcel",
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "landscape.natural",
+									elementType: "geometry",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "poi",
+									elementType: "geometry",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "poi",
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#484747"
+									}],
+								},
+								{
+									featureType: "poi.park",
+									elementType: "geometry.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "poi.park",
+									elementType: "labels.text.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "road",
+									elementType: "geometry",
+									stylers: [{
+										color: "#ffffff"
+									}],
+								},
+								{
+									featureType: "road.arterial",
+									elementType: "geometry",
+									stylers: [{
+										color: "#E7CAA4"
+									}],
+								},
+								{
+									featureType: "road.highway",
+									elementType: "geometry",
+									stylers: [{
+										color: "#FEC67B"
+									}],
+								},
+								{
+									featureType: "road.highway",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#e9bc62"
+									}],
+								},
+								{
+									featureType: "road.highway.controlled_access",
+									elementType: "geometry",
+									stylers: [{
+										color: "#e98d58"
+									}],
+								},
+								{
+									featureType: "road.highway.controlled_access",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#db8555"
+									}],
+								},
+								{
+									featureType: "road.local",
+									elementType: "labels.text.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "transit.line",
+									elementType: "geometry",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "transit.line",
+									elementType: "labels.text.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "transit.line",
+									elementType: "labels.text.stroke",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "transit.station",
+									elementType: "geometry",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "water",
+									elementType: "geometry.fill",
+									stylers: [{
+										color: "#AACBDC"
+									}],
+								},
+								{
+									featureType: "water",
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#AACBDC"
+									}],
+								},
+							], {
+								name: "Styled Map"
+							}
+						);
+						// The location of Uluru
+						const uluru = {
+							lat: 50.47134355813089,
+							lng: 30.44990476995456,
+						};
+						// The map, centered at Uluru
+						const map = new google.maps.Map(document.getElementById("map"), {
+							zoom: 13,
+							center: uluru,
+						});
+						const icon = {
+							url: "img/location.svg",
+							scaledSize: new google.maps.Size(42, 56),
+						};
+
+						// The marker, positioned at Uluru
+						const marker = new google.maps.Marker({
+							position: uluru,
+							map: map,
+							icon: icon,
+							draggable: true,
+							animation: google.maps.Animation.DROP,
+						});
+						marker.addListener("click", toggleBounce);
+
+						function toggleBounce() {
+							if (marker.getAnimation() !== null) {
+								marker.setAnimation(null);
+							} else {
+								marker.setAnimation(google.maps.Animation.BOUNCE);
+							}
+						}
+						map.mapTypes.set("styled_map", styledMapType);
+						map.setMapTypeId("styled_map");
+					}
+				</script>
+				<!-- <script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly" async>
+		</script> -->
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__container">
+					<div class="footer__top top-footer">
+						<div class="top-footer__social">
+							<h3 class="top-footer__title">Consequat orci, risus</h3>
+							<div class="top-footer__text">Nulla tellus diam ornare id purus et nisi facilisis nec. Orci nullam ornare quisque mollis sollicitudin. Ante risus lorem pellentesque orci.</div>
+							<div class="top-footer__social-info">Join the community</div>
+							<div class="top-footer__block block-footer">
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/discord.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/youtube.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/twiter.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/pinterest.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/akar-footer.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/facebook-footer.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="top-footer__body">
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Marketplace</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="catalog.html">Shop</a>
+										<a class="spollers__link" href="about.html">About</a>
+										<a class="spollers__link" href="gallery.html">Gallery</a>
+										<a class="spollers__link" href="contact.html">Contact</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Resource</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Sed</a>
+										<a class="spollers__link" href="#">Vitae</a>
+										<a class="spollers__link" href="#">Tellus</a>
+										<a class="spollers__link" href="#">Dui</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">My Account</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Congue</a>
+										<a class="spollers__link" href="#">Augue</a>
+										<a class="spollers__link" href="#">Posuere</a>
+										<a class="spollers__link" href="#">Molestie</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Company</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Cras</a>
+										<a class="spollers__link" href="#">Tincidunt</a>
+										<a class="spollers__link" href="#">Gravida</a>
+										<a class="spollers__link" href="#">Mattis</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__info">Copyright ® 2021</div>
+					<div class="copyright-footer__body">
+						<div class="copyright-footer__text">Policy</div>
+						<div class="copyright-footer__text">Security</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly" async>
+		</script> -->
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&_v=20220330210951"></script> -->
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__top">
+						<div class="popup__title">Make an order</div>
+						<button data-close type="button" class="popup__close">x</button>
+					</div>
+					<form class="contacts__form form" action="#">
+						<div class="form__input">
+							<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+						</div>
+						<div class="form__input">
+							<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+						</div>
+						<div class="form__input">
+							<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+						</div>
+						<div class="form__textarea">
+							<textarea class="textarea" autocomplete="off" placeholder="Your massage" name="text"></textarea>
+						</div>
+						<div class="popup__order order">
+							<div class="order__title">You ordered:</div>
+							<div class="order__number"></div>
+						</div>
+						<button type="submit" class="form__btn button">Send an order</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220330210951"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly&_v=20220330210951" async>
+	</script>
+</body>
+
+</html>

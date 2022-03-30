@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220330210951">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<a href="index.html" class="header__logo">TwentyTwo</a>
+
+
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Catalog</a></li>
+								<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="header__shop">
+						<a href="" class="header__icon-shop  _icon-shopping"></a>
+						<div class="header__card">
+							<div class="header__top card">
+								<div class="card__number"></div>
+								<div class="card__title">Your Cart</div>
+								<button class="card__btn" type="button">x</button>
+							</div>
+							<ul class="header__list list-card"></ul>
+
+							<div class="header__total">Subtotal: <span>$21.60</span></div>
+							<button data-popup="#popup" type="button" class="header__button button">Checkout</button>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+
+		<main class="contact">
+			<div class="contact__main main-page">
+				<h3 class="main-page__title">Contact</h3>
+			</div>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__wrapper">
+						<div class="contacts__body">
+							<ul class="contacts__items">
+								<li class="contacts__item">
+									<a class="contacts__link" href="https://www.google.com.ua">Address: <span>Ukraine, Kuiv. address 24</span></a>
+								</li>
+								<li class="contacts__item">
+									<a class="contacts__link" href="tel:380988888888">Phone: <span>+380 (98) 888-88-88</span></a>
+								</li>
+								<li class="contacts__item">
+									<a class="contacts__link" href="tel:380988888888">Fax: <span>+380 (98) 888-88-88</span></a>
+								</li>
+							</ul>
+
+							<div class="contacts__info info-contact">
+								<div class="info-contact__title">Requisites:</div>
+								<div class="info-contact__text">ОКПО 00032547</div>
+								<div class="info-contact__text">ОКАТО 45293554001</div>
+								<div class="info-contact__text">ОКТМО 45397000001</div>
+							</div>
+						</div>
+
+						<form class="contacts__form form" action="#">
+							<div class="form__input">
+								<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+							</div>
+							<div class="form__input">
+								<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+							</div>
+							<div class="form__input">
+								<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+							</div>
+							<div class="form__textarea">
+								<textarea class="textarea" autocomplete="off" placeholder="Message" name="text"></textarea>
+							</div>
+							<button type="submit" class="form__btn button">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__maps maps">
+				<div id="map" class="maps__body">
+				</div>
+				<script>
+					function initMap() {
+
+						const styledMapType = new google.maps.StyledMapType(
+							[{
+									elementType: "geometry",
+									stylers: [{
+										color: "#ebe3cd"
+									}]
+								},
+								{
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#484747"
+									}]
+								},
+								{
+									elementType: "labels.text.stroke",
+									stylers: [{
+										visibility: "off"
+									}]
+								},
+								{
+									featureType: "administrative",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#c9b2a6"
+									}],
+								},
+								{
+									featureType: "administrative.land_parcel",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#dcd2be"
+									}],
+								},
+								{
+									featureType: "administrative.land_parcel",
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "landscape.natural",
+									elementType: "geometry",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "poi",
+									elementType: "geometry",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "poi",
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#484747"
+									}],
+								},
+								{
+									featureType: "poi.park",
+									elementType: "geometry.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "poi.park",
+									elementType: "labels.text.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "road",
+									elementType: "geometry",
+									stylers: [{
+										color: "#ffffff"
+									}],
+								},
+								{
+									featureType: "road.arterial",
+									elementType: "geometry",
+									stylers: [{
+										color: "#E7CAA4"
+									}],
+								},
+								{
+									featureType: "road.highway",
+									elementType: "geometry",
+									stylers: [{
+										color: "#FEC67B"
+									}],
+								},
+								{
+									featureType: "road.highway",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#e9bc62"
+									}],
+								},
+								{
+									featureType: "road.highway.controlled_access",
+									elementType: "geometry",
+									stylers: [{
+										color: "#e98d58"
+									}],
+								},
+								{
+									featureType: "road.highway.controlled_access",
+									elementType: "geometry.stroke",
+									stylers: [{
+										color: "#db8555"
+									}],
+								},
+								{
+									featureType: "road.local",
+									elementType: "labels.text.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "transit.line",
+									elementType: "geometry",
+									stylers: [{
+										color: "#F4F3D3"
+									}],
+								},
+								{
+									featureType: "transit.line",
+									elementType: "labels.text.fill",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "transit.line",
+									elementType: "labels.text.stroke",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "transit.station",
+									elementType: "geometry",
+									stylers: [{
+										visibility: "off"
+									}],
+								},
+								{
+									featureType: "water",
+									elementType: "geometry.fill",
+									stylers: [{
+										color: "#AACBDC"
+									}],
+								},
+								{
+									featureType: "water",
+									elementType: "labels.text.fill",
+									stylers: [{
+										color: "#AACBDC"
+									}],
+								},
+							], {
+								name: "Styled Map"
+							}
+						);
+						// The location of Uluru
+						const uluru = {
+							lat: 50.47134355813089,
+							lng: 30.44990476995456,
+						};
+						// The map, centered at Uluru
+						const map = new google.maps.Map(document.getElementById("map"), {
+							zoom: 13,
+							center: uluru,
+						});
+						const icon = {
+							url: "img/location.svg",
+							scaledSize: new google.maps.Size(42, 56),
+						};
+
+						// The marker, positioned at Uluru
+						const marker = new google.maps.Marker({
+							position: uluru,
+							map: map,
+							icon: icon,
+							draggable: true,
+							animation: google.maps.Animation.DROP,
+						});
+						marker.addListener("click", toggleBounce);
+
+						function toggleBounce() {
+							if (marker.getAnimation() !== null) {
+								marker.setAnimation(null);
+							} else {
+								marker.setAnimation(google.maps.Animation.BOUNCE);
+							}
+						}
+						map.mapTypes.set("styled_map", styledMapType);
+						map.setMapTypeId("styled_map");
+					}
+				</script>
+				<!-- <script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly" async>
+		</script> -->
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__container">
+					<div class="footer__top top-footer">
+						<div class="top-footer__social">
+							<h3 class="top-footer__title">Consequat orci, risus</h3>
+							<div class="top-footer__text">Nulla tellus diam ornare id purus et nisi facilisis nec. Orci nullam ornare quisque mollis sollicitudin. Ante risus lorem pellentesque orci.</div>
+							<div class="top-footer__social-info">Join the community</div>
+							<div class="top-footer__block block-footer">
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/discord.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/youtube.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/twiter.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/pinterest.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/akar-footer.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/facebook-footer.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="top-footer__body">
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Marketplace</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="catalog.html">Shop</a>
+										<a class="spollers__link" href="about.html">About</a>
+										<a class="spollers__link" href="gallery.html">Gallery</a>
+										<a class="spollers__link" href="contact.html">Contact</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Resource</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Sed</a>
+										<a class="spollers__link" href="#">Vitae</a>
+										<a class="spollers__link" href="#">Tellus</a>
+										<a class="spollers__link" href="#">Dui</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">My Account</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Congue</a>
+										<a class="spollers__link" href="#">Augue</a>
+										<a class="spollers__link" href="#">Posuere</a>
+										<a class="spollers__link" href="#">Molestie</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Company</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Cras</a>
+										<a class="spollers__link" href="#">Tincidunt</a>
+										<a class="spollers__link" href="#">Gravida</a>
+										<a class="spollers__link" href="#">Mattis</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__info">Copyright ® 2021</div>
+					<div class="copyright-footer__body">
+						<div class="copyright-footer__text">Policy</div>
+						<div class="copyright-footer__text">Security</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__top">
+						<div class="popup__title">Make an order</div>
+						<button data-close type="button" class="popup__close">x</button>
+					</div>
+					<form class="contacts__form form" action="#">
+						<div class="form__input">
+							<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+						</div>
+						<div class="form__input">
+							<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+						</div>
+						<div class="form__input">
+							<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+						</div>
+						<div class="form__textarea">
+							<textarea class="textarea" autocomplete="off" placeholder="Your massage" name="text"></textarea>
+						</div>
+						<div class="popup__order order">
+							<div class="order__title">You ordered:</div>
+							<div class="order__number"></div>
+						</div>
+						<button type="submit" class="form__btn button">Send an order</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220330210951"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly&_v=20220330210951" async>
+	</script>
+</body>
+
+</html>

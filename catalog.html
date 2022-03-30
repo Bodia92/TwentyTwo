@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Catalog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220330210951">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<a href="index.html" class="header__logo">TwentyTwo</a>
+
+
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Catalog</a></li>
+								<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="header__shop">
+						<a href="" class="header__icon-shop  _icon-shopping"></a>
+						<div class="header__card">
+							<div class="header__top card">
+								<div class="card__number"></div>
+								<div class="card__title">Your Cart</div>
+								<button class="card__btn" type="button">x</button>
+							</div>
+							<ul class="header__list list-card"></ul>
+
+							<div class="header__total">Subtotal: <span>$21.60</span></div>
+							<button data-popup="#popup" type="button" class="header__button button">Checkout</button>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+
+		<main class="catalogs-page">
+			<div class="catalogs-page__main main-page">
+				<h3 class="main-page__title">Catalog</h3>
+			</div>
+			<section class="catalogs-page__catalog catalog">
+				<div class="catalog__container">
+
+					<div class="catalog__filter filter-catalog">
+						<form class="filter-catalog__form" action="#">
+							<div class="filter-catalog__wrapper">
+								<h4 class="filter-catalog__title">Filter:</h4>
+								<div class="filter-catalog__body">
+
+									<select name="form[]" class="filter-catalog__form-one">
+										<option class="filter-catalog__item" value="1" selected>Avalability #1</option>
+										<option class="filter-catalog__item" value="2">Avalability #2</option>
+										<option class="filter-catalog__item" value="3">Avalability #3</option>
+										<option class="filter-catalog__item" value="4">Avalability #4</option>
+									</select>
+									<select name="form[]" class="filter-catalog__form-one">
+										<option class="filter-catalog__item" value="1" selected>Price #1</option>
+										<option class="filter-catalog__item" value="2">Price #2</option>
+										<option class="filter-catalog__item" value="3">Price #3</option>
+										<option class="filter-catalog__item" value="4">Price #4</option>
+									</select>
+									<select name="form[]" class="filter-catalog__form-one">
+										<option class="filter-catalog__item" value="1" selected>Color #1</option>
+										<option class="filter-catalog__item" value="2">Color #2</option>
+										<option class="filter-catalog__item" value="3">Color #3</option>
+										<option class="filter-catalog__item" value="4">Color #4</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="filter-catalog__sort-by">
+								<h4 class="filter-catalog__title">Sort by:</h4>
+								<select name="form[]" class="filter-catalog__form-one">
+									<option class="filter-catalog__item" value="1" selected>Best selling #1</option>
+									<option class="filter-catalog__item" value="2">Best selling #2</option>
+									<option class="filter-catalog__item" value="3">Best selling #3</option>
+									<option class="filter-catalog__item" value="4">Best selling #4</option>
+								</select>
+								<div class="filter-catalog__value">6 products</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="catalog__items">
+
+						<article data-pid="1" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$38</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="2" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$28</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="3" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$48</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="4" class="catalog__item item-catalog">
+							<div class="item-catalog__label">
+								<img src="img/catalog/sale.svg" alt="sale">
+							</div>
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$18</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="5" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$48</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="6" class="catalog__item item-catalog">
+							<div class="item-catalog__label">
+								<img src="img/catalog/sale.svg" alt="sale">
+							</div>
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$18</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="7" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$28</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="8" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$38</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="9" class="catalog__item item-catalog">
+							<div class="item-catalog__label">
+								<img src="img/catalog/sale.svg" alt="sale">
+							</div>
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$18</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="10" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$48</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="11" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$38</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+						<article data-pid="12" class="catalog__item item-catalog">
+							<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg" alt="img"></picture></a>
+							<div class="item-catalog__title">Non est magna</div>
+							<div class="item-catalog__price">$28</div>
+							<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+						</article>
+
+					</div>
+					<div data-showmore class="block block_margin">
+						<div data-showmore-content class="catalog__items">
+							<article data-pid="13" class="catalog__item item-catalog">
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$48</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+							<article data-pid="14" class="catalog__item item-catalog">
+								<div class="item-catalog__label">
+									<img src="img/catalog/sale.svg" alt="sale">
+								</div>
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$18</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+							<article data-pid="15" class="catalog__item item-catalog">
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$28</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+							<article data-pid="16" class="catalog__item item-catalog">
+								<a href="" class="item-catalog__image-ibg"><picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg" alt="img"></picture></a>
+								<div class="item-catalog__title">Non est magna</div>
+								<div class="item-catalog__price">$38</div>
+								<a href="" class="item-catalog__btn button _icon-shopping">Add to card</a>
+							</article>
+
+						</div>
+						<button data-showmore-button type="button" class="block__more button"><span>Show more</span><span>Show less</span></button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__container">
+					<div class="footer__top top-footer">
+						<div class="top-footer__social">
+							<h3 class="top-footer__title">Consequat orci, risus</h3>
+							<div class="top-footer__text">Nulla tellus diam ornare id purus et nisi facilisis nec. Orci nullam ornare quisque mollis sollicitudin. Ante risus lorem pellentesque orci.</div>
+							<div class="top-footer__social-info">Join the community</div>
+							<div class="top-footer__block block-footer">
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/discord.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/youtube.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/twiter.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/pinterest.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/akar-footer.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/facebook-footer.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="top-footer__body">
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Marketplace</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="catalog.html">Shop</a>
+										<a class="spollers__link" href="about.html">About</a>
+										<a class="spollers__link" href="gallery.html">Gallery</a>
+										<a class="spollers__link" href="contact.html">Contact</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Resource</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Sed</a>
+										<a class="spollers__link" href="#">Vitae</a>
+										<a class="spollers__link" href="#">Tellus</a>
+										<a class="spollers__link" href="#">Dui</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">My Account</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Congue</a>
+										<a class="spollers__link" href="#">Augue</a>
+										<a class="spollers__link" href="#">Posuere</a>
+										<a class="spollers__link" href="#">Molestie</a>
+									</div>
+								</div>
+							</div>
+							<div data-spollers="768" class="spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Company</button>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">Cras</a>
+										<a class="spollers__link" href="#">Tincidunt</a>
+										<a class="spollers__link" href="#">Gravida</a>
+										<a class="spollers__link" href="#">Mattis</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright copyright-footer">
+				<div class="copyright-footer__container">
+					<div class="copyright-footer__info">Copyright ® 2021</div>
+					<div class="copyright-footer__body">
+						<div class="copyright-footer__text">Policy</div>
+						<div class="copyright-footer__text">Security</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__top">
+						<div class="popup__title">Make an order</div>
+						<button data-close type="button" class="popup__close">x</button>
+					</div>
+					<form class="contacts__form form" action="#">
+						<div class="form__input">
+							<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+						</div>
+						<div class="form__input">
+							<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+						</div>
+						<div class="form__input">
+							<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+						</div>
+						<div class="form__textarea">
+							<textarea class="textarea" autocomplete="off" placeholder="Your massage" name="text"></textarea>
+						</div>
+						<div class="popup__order order">
+							<div class="order__title">You ordered:</div>
+							<div class="order__number"></div>
+						</div>
+						<button type="submit" class="form__btn button">Send an order</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220330210951"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly&_v=20220330210951" async>
+	</script>
+</body>
+
+</html>
+
+
+
+<!-- <nav class="filter-catalog__body">
+                                    <ul class="filter-catalog__list">
+                                        <li class="filter-catalog__item">
+                                            <a href="" class="filter-catalog__link">Avalability</a>
+                                            <button type="button" data-spoller class="filter-catalog__arrow _icon-arrow-next"></button>
+                                            <ul class="filter-catalog__sub-list">
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Avalability #1</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Avalability #2</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Avalability #3</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Avalability #4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <a href="" class="filter-catalog__link">Price</a>
+                                            <button type="button" data-spoller class="filter-catalog__arrow _icon-arrow-next"></button>
+                                            <ul class="filter-catalog__sub-list">
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Price #1</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Price #2</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Price #3</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Price #4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <a href="" class="filter-catalog__link">Color</a>
+                                            <button type="button" data-spoller class="filter-catalog__arrow _icon-arrow-next"></button>
+                                            <ul class="filter-catalog__sub-list">
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Color #1</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Color #2</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Color #3</a>
+                                                </li>
+                                                <li class="filter-catalog__sub-item">
+                                                    <a href="" class="filter-catalog__sub-link">Color #4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav> --> -->
