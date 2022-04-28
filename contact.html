@@ -57,19 +57,22 @@
 			<div class="contact__main main-page">
 				<h3 class="main-page__title">Contact</h3>
 			</div>
-			<section class="page__contacts contacts">
+			<div class="page__contacts contacts">
 				<div class="contacts__container">
 					<div class="contacts__wrapper">
 						<div class="contacts__body">
 							<ul class="contacts__items">
 								<li class="contacts__item">
-									<a class="contacts__link" href="https://www.google.com.ua">Address: <span>Ukraine, Kuiv. address 24</span></a>
+									<a class="contacts__link" href="https://www.google.com.ua">Address: <span>Ukraine,
+											Kuiv. address 24</span></a>
 								</li>
 								<li class="contacts__item">
-									<a class="contacts__link" href="tel:380988888888">Phone: <span>+380 (98) 888-88-88</span></a>
+									<a class="contacts__link" href="tel:380988888888">Phone: <span>+380 (98)
+											888-88-88</span></a>
 								</li>
 								<li class="contacts__item">
-									<a class="contacts__link" href="tel:380988888888">Fax: <span>+380 (98) 888-88-88</span></a>
+									<a class="contacts__link" href="tel:380988888888">Fax: <span>+380 (98)
+											888-88-88</span></a>
 								</li>
 							</ul>
 
@@ -83,22 +86,26 @@
 
 						<form class="contacts__form form" action="#">
 							<div class="form__input">
-								<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+								<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+									placeholder="Your name" class="input">
 							</div>
 							<div class="form__input">
-								<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+								<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+									placeholder="Your phone" class="input">
 							</div>
 							<div class="form__input">
-								<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+								<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+									placeholder="Your email" class="input">
 							</div>
 							<div class="form__textarea">
-								<textarea class="textarea" autocomplete="off" placeholder="Message" name="text"></textarea>
+								<textarea class="textarea" autocomplete="off" placeholder="Message"
+									name="text"></textarea>
 							</div>
 							<button type="submit" class="form__btn button">Send</button>
 						</form>
 					</div>
 				</div>
-			</section>
+			</div>
 			<div class="page__maps maps">
 				<div id="map" class="maps__body">
 				</div>
@@ -107,173 +114,173 @@
 
 						const styledMapType = new google.maps.StyledMapType(
 							[{
-									elementType: "geometry",
-									stylers: [{
-										color: "#ebe3cd"
-									}]
-								},
-								{
-									elementType: "labels.text.fill",
-									stylers: [{
-										color: "#484747"
-									}]
-								},
-								{
-									elementType: "labels.text.stroke",
-									stylers: [{
-										visibility: "off"
-									}]
-								},
-								{
-									featureType: "administrative",
-									elementType: "geometry.stroke",
-									stylers: [{
-										color: "#c9b2a6"
-									}],
-								},
-								{
-									featureType: "administrative.land_parcel",
-									elementType: "geometry.stroke",
-									stylers: [{
-										color: "#dcd2be"
-									}],
-								},
-								{
-									featureType: "administrative.land_parcel",
-									elementType: "labels.text.fill",
-									stylers: [{
-										color: "#F4F3D3"
-									}],
-								},
-								{
-									featureType: "landscape.natural",
-									elementType: "geometry",
-									stylers: [{
-										color: "#F4F3D3"
-									}],
-								},
-								{
-									featureType: "poi",
-									elementType: "geometry",
-									stylers: [{
-										color: "#F4F3D3"
-									}],
-								},
-								{
-									featureType: "poi",
-									elementType: "labels.text.fill",
-									stylers: [{
-										color: "#484747"
-									}],
-								},
-								{
-									featureType: "poi.park",
-									elementType: "geometry.fill",
-									stylers: [{
-										visibility: "off"
-									}],
-								},
-								{
-									featureType: "poi.park",
-									elementType: "labels.text.fill",
-									stylers: [{
-										visibility: "off"
-									}],
-								},
-								{
-									featureType: "road",
-									elementType: "geometry",
-									stylers: [{
-										color: "#ffffff"
-									}],
-								},
-								{
-									featureType: "road.arterial",
-									elementType: "geometry",
-									stylers: [{
-										color: "#E7CAA4"
-									}],
-								},
-								{
-									featureType: "road.highway",
-									elementType: "geometry",
-									stylers: [{
-										color: "#FEC67B"
-									}],
-								},
-								{
-									featureType: "road.highway",
-									elementType: "geometry.stroke",
-									stylers: [{
-										color: "#e9bc62"
-									}],
-								},
-								{
-									featureType: "road.highway.controlled_access",
-									elementType: "geometry",
-									stylers: [{
-										color: "#e98d58"
-									}],
-								},
-								{
-									featureType: "road.highway.controlled_access",
-									elementType: "geometry.stroke",
-									stylers: [{
-										color: "#db8555"
-									}],
-								},
-								{
-									featureType: "road.local",
-									elementType: "labels.text.fill",
-									stylers: [{
-										visibility: "off"
-									}],
-								},
-								{
-									featureType: "transit.line",
-									elementType: "geometry",
-									stylers: [{
-										color: "#F4F3D3"
-									}],
-								},
-								{
-									featureType: "transit.line",
-									elementType: "labels.text.fill",
-									stylers: [{
-										visibility: "off"
-									}],
-								},
-								{
-									featureType: "transit.line",
-									elementType: "labels.text.stroke",
-									stylers: [{
-										visibility: "off"
-									}],
-								},
-								{
-									featureType: "transit.station",
-									elementType: "geometry",
-									stylers: [{
-										visibility: "off"
-									}],
-								},
-								{
-									featureType: "water",
-									elementType: "geometry.fill",
-									stylers: [{
-										color: "#AACBDC"
-									}],
-								},
-								{
-									featureType: "water",
-									elementType: "labels.text.fill",
-									stylers: [{
-										color: "#AACBDC"
-									}],
-								},
+								elementType: "geometry",
+								stylers: [{
+									color: "#ebe3cd"
+								}]
+							},
+							{
+								elementType: "labels.text.fill",
+								stylers: [{
+									color: "#484747"
+								}]
+							},
+							{
+								elementType: "labels.text.stroke",
+								stylers: [{
+									visibility: "off"
+								}]
+							},
+							{
+								featureType: "administrative",
+								elementType: "geometry.stroke",
+								stylers: [{
+									color: "#c9b2a6"
+								}],
+							},
+							{
+								featureType: "administrative.land_parcel",
+								elementType: "geometry.stroke",
+								stylers: [{
+									color: "#dcd2be"
+								}],
+							},
+							{
+								featureType: "administrative.land_parcel",
+								elementType: "labels.text.fill",
+								stylers: [{
+									color: "#F4F3D3"
+								}],
+							},
+							{
+								featureType: "landscape.natural",
+								elementType: "geometry",
+								stylers: [{
+									color: "#F4F3D3"
+								}],
+							},
+							{
+								featureType: "poi",
+								elementType: "geometry",
+								stylers: [{
+									color: "#F4F3D3"
+								}],
+							},
+							{
+								featureType: "poi",
+								elementType: "labels.text.fill",
+								stylers: [{
+									color: "#484747"
+								}],
+							},
+							{
+								featureType: "poi.park",
+								elementType: "geometry.fill",
+								stylers: [{
+									visibility: "off"
+								}],
+							},
+							{
+								featureType: "poi.park",
+								elementType: "labels.text.fill",
+								stylers: [{
+									visibility: "off"
+								}],
+							},
+							{
+								featureType: "road",
+								elementType: "geometry",
+								stylers: [{
+									color: "#ffffff"
+								}],
+							},
+							{
+								featureType: "road.arterial",
+								elementType: "geometry",
+								stylers: [{
+									color: "#E7CAA4"
+								}],
+							},
+							{
+								featureType: "road.highway",
+								elementType: "geometry",
+								stylers: [{
+									color: "#FEC67B"
+								}],
+							},
+							{
+								featureType: "road.highway",
+								elementType: "geometry.stroke",
+								stylers: [{
+									color: "#e9bc62"
+								}],
+							},
+							{
+								featureType: "road.highway.controlled_access",
+								elementType: "geometry",
+								stylers: [{
+									color: "#e98d58"
+								}],
+							},
+							{
+								featureType: "road.highway.controlled_access",
+								elementType: "geometry.stroke",
+								stylers: [{
+									color: "#db8555"
+								}],
+							},
+							{
+								featureType: "road.local",
+								elementType: "labels.text.fill",
+								stylers: [{
+									visibility: "off"
+								}],
+							},
+							{
+								featureType: "transit.line",
+								elementType: "geometry",
+								stylers: [{
+									color: "#F4F3D3"
+								}],
+							},
+							{
+								featureType: "transit.line",
+								elementType: "labels.text.fill",
+								stylers: [{
+									visibility: "off"
+								}],
+							},
+							{
+								featureType: "transit.line",
+								elementType: "labels.text.stroke",
+								stylers: [{
+									visibility: "off"
+								}],
+							},
+							{
+								featureType: "transit.station",
+								elementType: "geometry",
+								stylers: [{
+									visibility: "off"
+								}],
+							},
+							{
+								featureType: "water",
+								elementType: "geometry.fill",
+								stylers: [{
+									color: "#AACBDC"
+								}],
+							},
+							{
+								featureType: "water",
+								elementType: "labels.text.fill",
+								stylers: [{
+									color: "#AACBDC"
+								}],
+							},
 							], {
-								name: "Styled Map"
-							}
+							name: "Styled Map"
+						}
 						);
 						// The location of Uluru
 						const uluru = {
@@ -322,21 +329,29 @@
 					<div class="footer__top top-footer">
 						<div class="top-footer__social">
 							<h3 class="top-footer__title">Consequat orci, risus</h3>
-							<div class="top-footer__text">Nulla tellus diam ornare id purus et nisi facilisis nec. Orci nullam ornare quisque mollis sollicitudin. Ante risus lorem pellentesque orci.</div>
+							<div class="top-footer__text">Nulla tellus diam ornare id purus et nisi facilisis nec. Orci
+								nullam ornare quisque mollis sollicitudin. Ante risus lorem pellentesque orci.</div>
 							<div class="top-footer__social-info">Join the community</div>
 							<div class="top-footer__block block-footer">
-								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/discord.svg" alt=""></a>
-								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/youtube.svg" alt=""></a>
-								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/twiter.svg" alt=""></a>
-								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/pinterest.svg" alt=""></a>
-								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/akar-footer.svg" alt=""></a>
-								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img src="img/icons/facebook-footer.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img
+										src="img/icons/discord.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img
+										src="img/icons/youtube.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img
+										src="img/icons/twiter.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img
+										src="img/icons/pinterest.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img
+										src="img/icons/akar-footer.svg" alt=""></a>
+								<a href="" class="block-footer__image-ibg block-footer__image-ibg_contain"><img
+										src="img/icons/facebook-footer.svg" alt=""></a>
 							</div>
 						</div>
 						<div class="top-footer__body">
 							<div data-spollers="768" class="spollers">
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Marketplace</button>
+									<button type="button" data-spoller
+										class="spollers__title _icon-arrow-next">Marketplace</button>
 									<div class="spollers__body">
 										<a class="spollers__link" href="catalog.html">Shop</a>
 										<a class="spollers__link" href="about.html">About</a>
@@ -347,7 +362,8 @@
 							</div>
 							<div data-spollers="768" class="spollers">
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Resource</button>
+									<button type="button" data-spoller
+										class="spollers__title _icon-arrow-next">Resource</button>
 									<div class="spollers__body">
 										<a class="spollers__link" href="#">Sed</a>
 										<a class="spollers__link" href="#">Vitae</a>
@@ -358,7 +374,8 @@
 							</div>
 							<div data-spollers="768" class="spollers">
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title _icon-arrow-next">My Account</button>
+									<button type="button" data-spoller class="spollers__title _icon-arrow-next">My
+										Account</button>
 									<div class="spollers__body">
 										<a class="spollers__link" href="#">Congue</a>
 										<a class="spollers__link" href="#">Augue</a>
@@ -369,7 +386,8 @@
 							</div>
 							<div data-spollers="768" class="spollers">
 								<div class="spollers__item">
-									<button type="button" data-spoller class="spollers__title _icon-arrow-next">Company</button>
+									<button type="button" data-spoller
+										class="spollers__title _icon-arrow-next">Company</button>
 									<div class="spollers__body">
 										<a class="spollers__link" href="#">Cras</a>
 										<a class="spollers__link" href="#">Tincidunt</a>
@@ -403,16 +421,20 @@
 					</div>
 					<form class="contacts__form form" action="#">
 						<div class="form__input">
-							<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+							<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+								placeholder="Your name" class="input">
 						</div>
 						<div class="form__input">
-							<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="input">
+							<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+								placeholder="Your phone" class="input">
 						</div>
 						<div class="form__input">
-							<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Your email" class="input">
+							<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+								placeholder="Your email" class="input">
 						</div>
 						<div class="form__textarea">
-							<textarea class="textarea" autocomplete="off" placeholder="Your massage" name="text"></textarea>
+							<textarea class="textarea" autocomplete="off" placeholder="Your massage"
+								name="text"></textarea>
 						</div>
 						<div class="popup__order order">
 							<div class="order__title">You ordered:</div>
@@ -427,8 +449,10 @@
 
 
 	<script src="js/app.min.js?_v=20220428190404"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly&_v=20220428190404" async>
-	</script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXMoxhEOyjESeqkJHFh5PROwMG9noPLk&callback=initMap&v=weekly&_v=20220428190404"
+		async>
+		</script>
 </body>
 
 </html>
