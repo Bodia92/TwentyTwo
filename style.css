@@ -2802,13 +2802,13 @@ body.popup-show::after {
 .lg-closing .lg-sub-html {
   opacity: 0;
   -webkit-transition: -webkit-transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
-    opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.08 linear;
+    opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.08s linear;
   -moz-transition: -moz-transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
-    color 0.08 linear;
+    color 0.08s linear;
   -o-transition: -o-transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
-    color 0.08 linear;
+    color 0.08s linear;
   transition: transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
-    color 0.08 linear;
+    color 0.08s linear;
 }
 
 body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable) .lg-img-wrap,
