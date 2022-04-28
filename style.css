@@ -2131,7 +2131,6 @@ body.popup-show::after {
 @media (min-width: 61.99875em) {
   .body-tabs-items__column {
     grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-    grid-template-rows: repeat(auto, 14px);
     align-items: start;
   }
 }
@@ -2802,13 +2801,13 @@ body.popup-show::after {
 .lg-closing .lg-next,
 .lg-closing .lg-sub-html {
   opacity: 0;
-  -webkit-transition: -webkit-transform 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08 cubic-bezier(0, 0, 0.25, 1) 0s,
+  -webkit-transition: -webkit-transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
+    opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.08 linear;
+  -moz-transition: -moz-transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
     color 0.08 linear;
-  -moz-transition: -moz-transform 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08 cubic-bezier(0, 0, 0.25, 1) 0s,
+  -o-transition: -o-transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
     color 0.08 linear;
-  -o-transition: -o-transform 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08 cubic-bezier(0, 0, 0.25, 1) 0s,
-    color 0.08 linear;
-  transition: transform 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08 cubic-bezier(0, 0, 0.25, 1) 0s,
+  transition: transform 0.08s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08s cubic-bezier(0, 0, 0.25, 1) 0s,
     color 0.08 linear;
 }
 
